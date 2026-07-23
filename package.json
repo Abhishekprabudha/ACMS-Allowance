@@ -1,0 +1,21 @@
+{
+  "name": "acms-advanced-crew-management",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build && npm run pages:fallbacks",
+    "preview": "vite preview --host 0.0.0.0",
+    "pages:fallbacks": "node scripts/create-pages-fallbacks.mjs",
+    "test:engine": "node scripts/smoke-allowance-engine.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {}
+}
